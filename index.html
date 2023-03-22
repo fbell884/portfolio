@@ -13,14 +13,14 @@
     <body>
         <nav class="navbar navbar-expand-md navbar-dark p-4">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#"><img src="images/nav-image.png"></a>
+              <span class="navbar-brand" href="#"><img src="images/nav-image.png" alt="bitmoji of a headshot of francis."></span>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbar">
                 <ul class="navbar-nav me-auto">
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Projects</a>
+                    <a class="nav-link" href="#projects">Projects</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="https://github.com/fbell884">GitHub</a>
@@ -31,7 +31,7 @@
                 </ul>
                 <hr class="d-block d-md-none">
                 <div class="d-flex nav-btn-container justify-content-center">
-                  <a class="contact-btn">Contact Me!</a>
+                  <a href="mailto:fbell884@gmail.com" class="primary-cta">Contact Me!</a>
                 </div>
               </div>
             </div>
@@ -51,6 +51,55 @@
                           <img src="images/bitmoji.png" alt="bitmoji of francis on a computer screen.">
                         </div>
                       </div>
+                </div>
+            </section>
+            <section id="projects">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12 text-center mb-5">
+                            <h2>My Projects</h2>
+                            <p>View the source code for these & other projects here: <a href="https://github.com/fbell884"><strong>GitHub</strong></a></p>
+                        </div>
+                        <div class="col-12 col-lg-4 mb-5 mb-lg-0">
+                            <div class="card h-100" >
+                                <img src="images/url-shortener.png" class="card-img-top" alt="screenshot of URL Shortener project">
+                                <div class="card-body text-center">
+                                    <h3 class="card-title">URL Shortener</h3>
+                                    <p class="card-text">
+                                        This project is the frontend for a landing page that uses the <a href="https://shrtco.de/docs">shrtcode</a> API.
+                                        I used local storage to store a URL object and render the shortened URL content.
+                                    </p>
+                                  <a href="https://shortenitfrancis.netlify.app" class="primary-cta">View Project</a>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-12 col-lg-4 mb-5 mb-lg-0">
+                            <div class="card h-100" >
+                                <img src="images/splitter-tip-calc.png" class="card-img-top" alt="screenshot of tip calculator project.">
+                                <div class="card-body text-center">
+                                    <h3 class="card-title">Tip Calculator</h3>
+                                    <p class="card-text">
+                                        This project is a tip calculator to make splitting tips easy for multiple people. 
+                                        This is done by using JS to calculate values and manipulate the DOM.
+                                    </p>
+                                  <a href="https://fbell884.github.io/tip-calculator" class="primary-cta">View Project</a>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-12 col-lg-4 mb-5 mb-lg-0">
+                            <div class="card h-100" >
+                                <img src="images/francis-forecast.png" class="card-img-top" alt="screenshot of weather app project.">
+                                <div class="card-body text-center">
+                                    <h3 class="card-title">Francis' Forecast</h3>
+                                    <p class="card-text">
+                                        This project was my first project using the fetch API to get weather data from the 
+                                        OpenWeatherMap API. Project is meant to be mobile focused.
+                                    </p>
+                                    <a href="https://francisforecast.netlify.app" class="primary-cta">View Project</a>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
                 </div>
             </section>
             
