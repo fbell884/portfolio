@@ -2,6 +2,7 @@
 
 html, body {
     overflow-x: hidden;
+    scroll-behavior: smooth;
   }
 
 body {
@@ -34,7 +35,7 @@ body {
     }
 }
 
-.contact-btn {
+.primary-cta {
     border-radius: 2rem;
     min-width: 150px;
     padding-top: 10px;
@@ -42,9 +43,12 @@ body {
     text-align: center;
     color:#fff;
     background-color: hsl(180, 66%, 49%);
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
 }
 
-.contact-btn:hover {
+.primary-cta:hover {
     background-color: hsl(180, 80%, 49%);
     color:#fff;
 }
@@ -69,4 +73,54 @@ body {
 .subhead {
     font-size: 1.5rem;
     color: gold;
+}
+
+/* Section Styles */
+
+section h2 {
+    color: #fff;
+    font-size: 3rem;
+    margin-top: 2.5rem;
+}
+
+#projects {
+    min-height: 100vh;
+}
+
+#projects p {
+    color: #fff;
+}
+
+#projects p a {
+    color: hsl(180, 66%, 49%);
+    text-decoration: none;
+}
+
+#projects p a:hover {
+    color: hsl(180, 80%, 49%);
+}
+
+#projects .card {
+    background-color: transparent;
+    border: none;
+}
+
+#projects .card .card-img-top {
+    height: 100%;
+    border-radius: 4px;
+}
+
+#projects .card h3 {
+    color: goldenrod;
+    font-size: 1.35rem;
+}
+
+#projects .card .card-text {
+    color: lightgrey;
+}
+
+@media (max-width: 768px) {
+    .card { 
+        margin-bottom: 1.5rem;
+    }
 }
