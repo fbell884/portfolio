@@ -37,17 +37,18 @@ let skillsPerPage = 5;
 const skillObj = [
     { skills: "HTML" },
     { skills: "CSS" },
-    { skills: "Bootstrap" },
     { skills: "JavaScript" },
+    { skills: "Git" },
+    { skills: "Accessibility" },
+    { skills: "SEO" },
+    { skills: "JIRA" },
+    { skills: "Bootstrap" },
     { skills: "React" },
     { skills: "jQuery" },
     { skills: "Node.js" },
     { skills: "MongoDB" },
     { skills: "SQL Server" },
-    { skills: "Git" },
-    { skills: "JIRA" },
-    { skills: "Accessibility" },
-    { skills: "SEO" },
+    { skills: "Debugging" },
     { skills: "CMS" }
 ]; 
 
@@ -120,3 +121,13 @@ function nextPage()
 window.onload = () => {
     changePage(1);
 };
+
+// Close dropdown on mouseout
+const dropdownArea = document.querySelector('.navbar');
+const dropdownButton = document.getElementById('skills');
+
+dropdownArea.addEventListener('mouseleave', () => {
+    if (dropdownButton.classList.contains("show")) {
+        dropdownButton.click();
+    }
+});
