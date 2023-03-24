@@ -160,19 +160,19 @@ section h2 {
     font-size: 1.1rem;
     background-color: transparent;
     border: none;
-    margin: 0.25rem 0.25rem;
+    margin: 0.25rem 0.75rem;
     cursor: pointer;
-    height: 2.5rem;
-    width: 2.5rem;
+    height: 1.5rem;
+    width: 1.5rem;
     border-radius: .2rem;
   }
   .pagination-number:hover,
   .pagination-button:not(.disabled):hover {
-    background: #fff;
+    background: hsl(260, 8%, 14%);
+    color: hsl(180, 66%, 49%);
   }
   .pagination-number.active {
     color: #fff;
-    background: #0085b6;
   }
 
   .dropdown-menu {
